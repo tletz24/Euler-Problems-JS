@@ -1,0 +1,11 @@
+{
+  "name": "letz-euler-solutions",
+  "version": "1.0.0",
+  "description": "This is a package containing my solution to euler's problems",
+  "main": "One.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
