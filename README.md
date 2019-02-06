@@ -3,6 +3,7 @@
 ## Summary
 
 This repository is intended for me to be a place where I can write & push my solution to some some of the Euler problems.
+The Euler problems can be found here: [Project Euler](https://projecteuler.net/archives).
 
 ## Getting Setup
 
