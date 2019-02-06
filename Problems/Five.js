@@ -14,9 +14,9 @@ const isDivisibleByNumbers = (num, arr) => {
 
     arr.forEach(val => {
         console.log(val);
-        if (num % val != 0) {
+        if (num % val !== 0) {
             flag = false;
-            break;
+            return;
         }
     });
 

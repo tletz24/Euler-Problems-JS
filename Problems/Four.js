@@ -10,16 +10,16 @@
 // Import the palindrome checker from our Utils/ directory.
 const pal = require('../Utils/palindrome');
 
-largest = null;
+let largest = null;
 
-for (let p = 999; p > 99; p--) {
-    for (let q = 999; q > 99; q--) {
-        temp = p * q;
+for (let p = 999; p > 99; p -= 1) {
+  for (let q = 999; q > 99; q -= 1) {
+    const temp = p * q;
 
-        if(pal.checkNumberPalindrome(temp) && temp > largest) {
-            largest = temp;
-        }
+    if (pal.checkNumberPalindrome(temp) && temp > largest) {
+      largest = temp;
     }
+  }
 }
 
-console.error("Largest: " + largest);
+console.error(`Largest: ${largest}`);
