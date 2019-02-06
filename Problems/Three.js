@@ -7,6 +7,8 @@
 
 const prime = require('../Utils/prime');
 
+console.time('Problem 3');
+
 const target = 600851475143;
 
 for (let index = 1; index < target; index += 1) {
@@ -19,3 +21,5 @@ for (let index = 1; index < target; index += 1) {
     }
   }
 }
+
+console.timeEnd('Problem 3');

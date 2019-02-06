@@ -10,6 +10,8 @@
 // Import the palindrome checker from our Utils/ directory.
 const pal = require('../Utils/palindrome');
 
+console.time('Problem 4');
+
 let largest = null;
 
 for (let p = 999; p > 99; p -= 1) {
@@ -21,5 +23,7 @@ for (let p = 999; p > 99; p -= 1) {
     }
   }
 }
+
+console.timeEnd('Problem 4');
 
 console.error(`Largest: ${largest}`);

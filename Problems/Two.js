@@ -12,7 +12,9 @@
  * even-valued terms.
  */
 
-let termOne = 1;
+console.time('Problem 2');
+
+ let termOne = 1;
 let termTwo = 2;
 let nextTerm = termOne + termTwo;
 
@@ -27,5 +29,7 @@ while (termTwo < 4000000) {
   termOne = termTwo;
   termTwo = nextTerm;
 }
+
+console.timeEnd('Problem 2');
 
 console.log(`Total: ${total}`);

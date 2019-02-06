@@ -8,12 +8,16 @@
  * all the multiples of 3 or 5 below 1000.
  */
 
-let total = 0;
+console.time('Problem 1');
+
+ let total = 0;
 
 for (let i = 1; i < 1000; i += 1) {
   if ((i % 3) === 0 || (i % 5) === 0) {
     total += i;
   }
 }
+
+console.timeEnd('Problem 1');
 
 console.log(`Total: ${total}`);
