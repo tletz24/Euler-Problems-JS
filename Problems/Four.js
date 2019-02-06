@@ -7,22 +7,8 @@
  * palindrome made from the product of two 3-digit numbers.
  */
 
-function checkPalindrome(number) {
-    let rem, temp, final = 0;
-
-    temp = number;
-    while(number > 0) {
-        rem = number % 10;
-        number = parseInt(number / 10);
-        final = final * 10 + rem;
-    }
-
-    if (final == temp) {
-        return true;
-    } else {
-        return false;
-    }
-}
+// Import the palindrome checker from our Utils/ directory.
+const pal = require('../Utils/palindrome');
 
 largest = null;
 
@@ -30,7 +16,7 @@ for (let p = 999; p > 99; p--) {
     for (let q = 999; q > 99; q--) {
         temp = p * q;
 
-        if(checkPalindrome(temp) && temp > largest) {
+        if(pal.checkNumberPalindrome(temp) && temp > largest) {
             largest = temp;
         }
     }
