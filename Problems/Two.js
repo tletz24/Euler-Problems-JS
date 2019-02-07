@@ -14,7 +14,7 @@
 
 console.time('Problem 2');
 
- let termOne = 1;
+let termOne = 1;
 let termTwo = 2;
 let nextTerm = termOne + termTwo;
 

@@ -1,5 +1,6 @@
 /**
- * TODO Finish this problem.
+ * TODO Try to not use brute force
+ * to solve this problem.
  *
  * Problem:
  *
@@ -9,9 +10,9 @@
  * evenly divisible by all of the numbers from 1 to 20?
  */
 
-console.time('Problem 5')
+console.time('Problem 5');
 
- let i = 20;
+let i = 20;
 
 while (i % 20 !== 0 || i % 19 !== 0 || i % 18 !== 0
     || i % 17 !== 0 || i % 16 !== 0 || i % 15 !== 0
